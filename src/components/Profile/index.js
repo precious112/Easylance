@@ -496,7 +496,14 @@ const Profile = () =>{
                       <>
                       {
                           hasProfile?
-                          <ProfilePic src={baseUrl+userProfile.image} alt="profilepic"/>
+                          <>
+                          {
+                            userProfile.image?
+                            <ProfilePic src={baseUrl+userProfile.image} alt="profilepic"/>
+                            :
+                            <SkeletonProfilePic/>  
+                          }
+                          </>
                           :
                           userProfile.image?
                           <SkeletonProfilePic/>
