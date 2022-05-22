@@ -147,7 +147,7 @@ align-items: flex-start;
 `;
 
 export const Skills= styled.div`
-min-width:120px;
+min-width:150px;
 min-height:140px;
 border-radius:20px;
 padding:5px;
@@ -466,7 +466,7 @@ animation:skeleton-loading 1s linear infinite alternate;
 
 
 export const CreateAndUpdateName = styled.input`
-padding: 5px;
+padding: 7px;
      font-size: 13px;
      border-width: 1px;
      border-color: #757a7a;
@@ -478,7 +478,7 @@ padding: 5px;
      border-radius: 10px;
      box-shadow: 0px 0px 0px rgba(66,66,66,.0);
      
-     width:80px;
+     width:120px;
 
      ::-webkit-input-placeholder {
         font-size: 12px;
@@ -520,7 +520,7 @@ display: flex;
 `;
 
 export const ExperienceForm= styled.input`
-padding: 5px;
+padding: 9px;
      font-size: 13px;
      border-width: 1px;
      border-color: #757a7a;
@@ -530,7 +530,7 @@ padding: 5px;
      border-radius: 10px;
      box-shadow: 0px 0px 0px rgba(66,66,66,.0);
      
-     width:100px;
+     width:140px;
 
      ::-webkit-input-placeholder {
         font-size: 12px;
@@ -539,7 +539,7 @@ padding: 5px;
 `;
 
 export const ExpInputBox= styled.textarea`
-padding: 5px;
+padding: 8px;
      font-size: 13px;
      border-width: 1px;
      border-color: #757a7a;
@@ -549,8 +549,8 @@ padding: 5px;
      border-style: solid;
      border-radius: 10px;
      box-shadow: 0px 0px 0px rgba(66,66,66,.0);
-     height:80px;
-     width:200px;
+     height:100px;
+     width:220px;
 
      ::-webkit-input-placeholder {
         font-size: 12px;
@@ -670,7 +670,7 @@ margin-bottom:10px;
 `;
 
 export const ProjectForm= styled.input`
-padding: 5px;
+padding: 8px;
      font-size: 12px;
      border-width: 1px;
      border-color: #757a7a;
@@ -681,7 +681,7 @@ padding: 5px;
      border-radius: 10px;
      box-shadow: 0px 0px 0px rgba(66,66,66,.0);
      
-     width:100px;
+     width:130px;
 
      ::-webkit-input-placeholder {
         font-size: 12px;
@@ -690,7 +690,7 @@ padding: 5px;
 `;
 
 export const ProInputBox= styled.textarea`
-padding: 5px;
+padding: 8px;
      font-size: 12px;
      border-width: 1px;
      border-color: #757a7a;
@@ -701,8 +701,8 @@ padding: 5px;
      border-radius: 10px;
      margin-bottom:7px;
      box-shadow: 0px 0px 0px rgba(66,66,66,.0);
-     height:80px;
-     width:200px;
+     height:100px;
+     width:220px;
 
      ::-webkit-input-placeholder {
         font-size: 12px;
