@@ -128,8 +128,8 @@ flex-direction:column-reverse;
     background: #f1f1f1;  
   }
   @media only screen and (max-width: 480px) {
-    min-height:82%;
-    max-height:82%;  
+    min-height:80%;
+    max-height:80%;  
   }
 `;
 
@@ -186,7 +186,7 @@ padding: 20px 0px 20px 0px;
 display:flex;
 @media only screen and (max-width: 480px) {
   padding: 10px 0px 10px 0px;
-  height: 13%; 
+  height: 15%; 
 }
 
 `;

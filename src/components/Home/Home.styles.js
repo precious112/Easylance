@@ -56,7 +56,8 @@ export const GigContent=styled.div`
 width:40%;
 padding:2%;
 @media only screen and (max-width: 480px) {
-   width:100%; 
+   width:98%;
+   padding:2%; 
 }
 `;
 

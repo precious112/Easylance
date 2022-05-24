@@ -4,7 +4,7 @@ export const  NavWrapper=styled.div`
 color:#686869;
 width:100%;
 background:#ffffff;
-top:0px;
+top:0;
 left:0;
 position:sticky;
 z-index: 100;
