@@ -19,6 +19,7 @@ const Home=()=>{
     const [dialog,setDialog]=useState("none");
     const [loading,setLoading]=useState(false);
     const [profileId,setProfileId]=useState(0);
+    const [error,setError]=useState("");
     const navigate=useNavigate();
 
     const params = useParams();
@@ -44,6 +45,9 @@ const Home=()=>{
         if(err.response.data != null){
           if(err.response.data.message=="User has no profile"){
              navigate(`/profile/${params.id}/${params.username}`)
+          }
+          if(err.response.data.message=="No gig matching your skills found,try using specific keywords like 'Django','React','Python','Photography' in your profile "){
+             setError(err.response.data.message);
           }
         }
       }  
@@ -81,6 +85,7 @@ const Home=()=>{
             <Wrapper>
             <NavBar image={profileImage}/>
                 {state.clientGig==0?<DialogBox display={"block"} message={NO_GIGS}/>:<></>}
+                {error?<DialogBox display={"block"} message={error}/>:<></>}
         <ContentWrapper>
             <HomeContent>
                 <ContentOne></ContentOne>

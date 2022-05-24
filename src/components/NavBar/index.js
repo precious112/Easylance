@@ -45,7 +45,7 @@ const NavBar=(props)=>{
     const userName=useSelector(state=>state.user.username);
     const userId=useSelector(state=>state.user.id);
 
-    /*const getLastMessages = async()=>{
+    const getLastMessages = async()=>{
         try{
          const response= await api.get(`/chat/${userId}/`,
          {
@@ -65,7 +65,7 @@ const NavBar=(props)=>{
 
      useEffect(()=>{
        getLastMessages();
-     },[])*/
+     },[])
 
      useEffect(()=>{
         
@@ -92,7 +92,7 @@ const NavBar=(props)=>{
             <i class="fa fa-home"></i>
             </MenuItems>
             </Link>
-            {/*<Link to={`/chat/${userId}`} style={{textDecoration:'none'}}>
+            <Link to={`/chat/${userId}`} style={{textDecoration:'none'}}>
             <MenuItems active={activeTwo}>
             <FontAwesomeIcon icon={faMessage} />
             </MenuItems>
@@ -102,10 +102,7 @@ const NavBar=(props)=>{
                 :
                 <></>
             }
-        </Link>*/}
-            <MenuItems active={activeTwo}>
-            <FontAwesomeIcon icon={faMessage} />
-            </MenuItems>
+        </Link>
             <div style={{padding:'20px',display:'inline'}}></div>
             <Link to={`/profile/${userId}/${userName}`}>
             <MenuItems active={activeFour}>
@@ -136,10 +133,10 @@ const NavBar=(props)=>{
                 </Link>
                 </MenuItemsActive>
                 <MenuItemsActive>
-                {/*<Link to={`/chat/${userId}`} style={{ textDecoration: 'none' }}>
+                {<Link to={`/chat/${userId}`} style={{ textDecoration: 'none' }}>
                     Chat
-            </Link>*/}
-                 Chat
+            </Link>}
+                 
                 </MenuItemsActive>
                 <MenuItemsActive>
                 <Link to={`/profile/${userId}/${userName}`} style={{ textDecoration: 'none' }}>

@@ -19,7 +19,7 @@ const Chat=()=>{
     const curUserId= useSelector(state=>state.user.id);
     const [userImage,setUserImage]=useState("");
     const firstname=useSelector(state=>state.chat.receiverFirstName);
-    const baseUrl= "http://127.0.0.1:8000";
+    const baseUrl= "https://res.cloudinary.com/dcofnmq0l/";
     const [chats,setChats]=useState([]);
 
     useEffect(()=>{

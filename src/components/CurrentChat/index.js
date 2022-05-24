@@ -9,7 +9,7 @@ import {saveCurMessage} from '../../actions';
 import { Link } from 'react-router-dom';
 
 const CurrentChat=(props)=>{
-  const baseUrl= "http://127.0.0.1:8000";
+    const baseUrl= "https://res.cloudinary.com/dcofnmq0l/";
     const curMessage=useSelector((state)=>state.chat);
     const curUserId=useSelector(state=>state.user.id);
     const curUserName=useSelector(state=>state.user.username);
@@ -75,7 +75,7 @@ const CurrentChat=(props)=>{
     useEffect(()=>{
         
          console.log("opening websocket");
-         websocket.current=new WebSocket(`ws://127.0.0.1:8000/chat/${curMessage.receiverUsername}/${curUserName}/`);
+         websocket.current=new WebSocket(`ws://easylance-backend.herokuapp.com/chat/${curMessage.receiverUsername}/${curUserName}/`);
          websocket.current.onopen= (event)=>{
              console.log("open:",event)
          }
