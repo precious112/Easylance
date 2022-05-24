@@ -9,7 +9,7 @@ import api from '../../API/Authentication';
 
 const LastChats=(props)=>{
     const dispatch= useDispatch();
-    const baseUrl= "http://127.0.0.1:8000";
+    const baseUrl= "https://res.cloudinary.com/dcofnmq0l/";
     const [lastMessages,setLastMessages]=useState([]);
 
     const getLastMessages = async()=>{
