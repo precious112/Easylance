@@ -11,8 +11,7 @@ box-shadow: -1px 3px 5px -2px rgba(0,0,0,0.63);
 @media only screen and (max-width: 480px) {
   display:${(props)=>props.display};
   width:100%;
-  min-height:100%;
-  max-height:100%;
+  height:100%;
   margin-left:0;
   position:fixed;
   top:0;
@@ -129,8 +128,8 @@ flex-direction:column-reverse;
     background: #f1f1f1;  
   }
   @media only screen and (max-width: 480px) {
-    min-height:80%;
-    max-height:80%;  
+    min-height:82%;
+    max-height:82%;  
   }
 `;
 
@@ -187,7 +186,7 @@ padding: 20px 0px 20px 0px;
 display:flex;
 @media only screen and (max-width: 480px) {
   padding: 10px 0px 10px 0px;
-  height: 15%; 
+  height: 13%; 
 }
 
 `;
