@@ -75,7 +75,7 @@ const CurrentChat=(props)=>{
     useEffect(()=>{
         
          console.log("opening websocket");
-         websocket.current=new WebSocket(`ws://easylance-backend.herokuapp.com/chat/${curMessage.receiverUsername}/${curUserName}/`);
+         websocket.current=new WebSocket(`wss://easylance-backend.herokuapp.com/chat/${curMessage.receiverUsername}/${curUserName}/`);
          websocket.current.onopen= (event)=>{
              console.log("open:",event)
          }
