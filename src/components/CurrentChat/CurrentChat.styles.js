@@ -128,6 +128,10 @@ flex-direction:column-reverse;
   ::-webkit-scrollbar-track:hover {
     background: #f1f1f1;  
   }
+  @media only screen and (max-width: 480px) {
+    min-height:330px;
+    max-height:70%;  
+  }
 `;
 
 /*export const OldChatSection=styled.div`
