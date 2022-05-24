@@ -19,7 +19,7 @@ const ListBidders=()=>{
   }
 
   const sendMessage=(e,index)=>{
-    /*onClick={(e)=>sendMessage(e,index)} inside message button*/
+    
     e.preventDefault();
     const chatBidder=location.state.bids[index];
     const state={
@@ -51,7 +51,7 @@ const ListBidders=()=>{
             <Link to={`/profile/${item.bidder.user.id}/${item.bidder.user.username}`}>
             <ViewProfile>view profile</ViewProfile>
             </Link>
-            <Message>message</Message>
+            <Message onClick={(e)=>sendMessage(e,index)}>message</Message>
             </ListItem>
         ))
         }
