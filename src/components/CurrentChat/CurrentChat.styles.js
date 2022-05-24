@@ -130,7 +130,7 @@ flex-direction:column-reverse;
   }
   @media only screen and (max-width: 480px) {
     min-height:330px;
-    max-height:70%;  
+    max-height:85%;  
   }
 `;
 
