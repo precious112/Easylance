@@ -13,7 +13,6 @@ box-shadow: -1px 3px 5px -2px rgba(0,0,0,0.63);
   width:100%;
   height:100%;
   margin-left:0;
-  position:fixed;
   top:0;
 }
 
@@ -186,7 +185,7 @@ padding: 20px 0px 20px 0px;
 display:flex;
 @media only screen and (max-width: 480px) {
   padding: 10px 0px 10px 0px;
-  height: 15%; 
+  min-height: 15%; 
 }
 
 `;
@@ -232,5 +231,9 @@ box-shadow: 1px 3px 10px 2px rgba(0,0,0,0.10);
 :focus{
 outline:none;
 padding:12px 7px 5px 7px;
+}
+@media only screen and (max-width: 480px) {
+ padding:9px 5px 1px 5px;
+ width:60%; 
 }
 `;

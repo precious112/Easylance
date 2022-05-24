@@ -12,7 +12,7 @@ box-shadow: -1px 3px 5px -2px rgba(0,0,0,0.63);
 @media only screen and (max-width: 480px) {
   width:100%;
   border-radius:0;
-  min-height:100vh;
+  min-height:100%;
   display:${(props)=>props.display};   
 }
 `;

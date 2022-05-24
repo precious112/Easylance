@@ -8,7 +8,7 @@ width:100%;
 padding-top:10px;
 @media only screen and (max-width: 480px) {
   padding-top:0;
-  height:100vh; 
+  min-height:100vh; 
 }
 `;
 
