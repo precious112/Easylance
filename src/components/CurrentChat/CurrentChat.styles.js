@@ -242,6 +242,7 @@ padding:12px 7px 5px 7px;
 @media only screen and (max-width: 480px) {
   margin-top:10px;
   margin-bottom:10px;
+  padding:8px 7px 1px 5px;
   
 }
 `;
