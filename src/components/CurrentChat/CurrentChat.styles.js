@@ -132,8 +132,8 @@ flex-direction:column-reverse;
     background: #f1f1f1;  
   }
   @media only screen and (max-width: 480px) {
-    min-height:65%;
-    max-height:65%;  
+    min-height:70%;
+    max-height:70%;  
   }
 `;
 
