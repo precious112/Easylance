@@ -24,8 +24,9 @@ width:100%;
 display:flex;
 justify-content:space-between;
 @media only screen and (max-width: 480px) {
-  height:20%;
- }
+  
+}
+
 `;
 
 export const HeaderText=styled.div`
