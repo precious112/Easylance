@@ -129,8 +129,8 @@ flex-direction:column-reverse;
     background: #f1f1f1;  
   }
   @media only screen and (max-width: 480px) {
-    min-height:75%;
-    max-height:75%;  
+    min-height:80%;
+    max-height:80%;  
   }
 `;
 
@@ -186,9 +186,8 @@ height:50px;
 padding: 20px 0px 20px 0px;
 display:flex;
 @media only screen and (max-width: 480px) {
-  padding: 10px 0px 10px 0px;
-  min-height: 15%; 
-  max-height:18%;
+  padding: 20px 0px 20px 0px;
+  
 }
 
 `;
@@ -237,6 +236,8 @@ padding:12px 7px 5px 7px;
 }
 @media only screen and (max-width: 480px) {
  padding:9px 5px 1px 5px;
+ min-height:10%;
+ max-height:13%;
   
 }
 `;
