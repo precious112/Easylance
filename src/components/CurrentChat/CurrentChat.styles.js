@@ -12,6 +12,7 @@ box-shadow: -1px 3px 5px -2px rgba(0,0,0,0.63);
   display:${(props)=>props.display};
   width:100%;
   height:${(props)=>props.vh};
+  max-height:${(props)=>props.vh};
   position:absolute;
   margin-left:0;
   top:0;
