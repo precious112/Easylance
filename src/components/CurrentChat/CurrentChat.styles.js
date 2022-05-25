@@ -12,8 +12,10 @@ box-shadow: -1px 3px 5px -2px rgba(0,0,0,0.63);
   display:${(props)=>props.display};
   width:100%;
   height:100%;
+  position:absolute;
   margin-left:0;
   top:0;
+  bottom:0;
 }
 
 `;
@@ -127,8 +129,8 @@ flex-direction:column-reverse;
     background: #f1f1f1;  
   }
   @media only screen and (max-width: 480px) {
-    min-height:80%;
-    max-height:80%;  
+    min-height:75%;
+    max-height:75%;  
   }
 `;
 
@@ -186,6 +188,7 @@ display:flex;
 @media only screen and (max-width: 480px) {
   padding: 10px 0px 10px 0px;
   min-height: 15%; 
+  max-height:18%;
 }
 
 `;
@@ -234,6 +237,6 @@ padding:12px 7px 5px 7px;
 }
 @media only screen and (max-width: 480px) {
  padding:9px 5px 1px 5px;
- width:60%; 
+  
 }
 `;

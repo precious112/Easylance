@@ -12,7 +12,10 @@ box-shadow: -1px 3px 5px -2px rgba(0,0,0,0.63);
 @media only screen and (max-width: 480px) {
   width:100%;
   border-radius:0;
-  min-height:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  bottom:0;
   display:${(props)=>props.display};   
 }
 `;
@@ -21,6 +24,9 @@ export const Header=styled.div`
 width:100%;
 display:flex;
 justify-content:space-between;
+@media only screen and (max-width: 480px) {
+  height:20%;
+ }
 `;
 
 export const HeaderText=styled.div`
@@ -65,6 +71,7 @@ overflow-y:auto;
   }
   @media only screen and (max-width: 480px) {
    min-height:75%;
+   max-height:75%;
   }
 `;
 

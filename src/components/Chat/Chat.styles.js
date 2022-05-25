@@ -7,8 +7,11 @@ min-height:100vh;
 width:100%;
 padding-top:10px;
 @media only screen and (max-width: 480px) {
-  padding-top:0;
+  padding:1px;
+  height:100vh;
   min-height:100vh; 
+  margin:0px;
+  box-sizing: border-box;
 }
 `;
 
@@ -32,6 +35,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 @media only screen and (max-width: 480px) {
-  margin-top:0;  
+  margin-top:0;
+  height:100%;  
 }
 `;
