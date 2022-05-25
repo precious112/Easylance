@@ -235,9 +235,7 @@ outline:none;
 padding:12px 7px 5px 7px;
 }
 @media only screen and (max-width: 480px) {
- padding:9px 5px 1px 5px;
- min-height:10%;
- max-height:13%;
+ 
   
 }
 `;
