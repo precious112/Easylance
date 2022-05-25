@@ -14,6 +14,7 @@ box-shadow: -1px 5px 16px -10px rgba(0,0,0,0.63);
 @media only screen and (max-width: 480px) {
   padding-top:6px;
   padding-bottom:6px;
+  box-sizing: border-box;
   }
 `;
 

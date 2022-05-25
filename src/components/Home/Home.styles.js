@@ -17,6 +17,7 @@ min-height:750px;
 
 @media only screen and (max-width: 480px) {
   padding:0;
+  box-sizing: border-box;
 }
 `;
 
@@ -56,8 +57,9 @@ export const GigContent=styled.div`
 width:40%;
 padding:2%;
 @media only screen and (max-width: 480px) {
-   width:97%;
-   padding:2%; 
+   width:98%;
+   padding-left:1px;
+   padding-right:1px;
 }
 `;
 
