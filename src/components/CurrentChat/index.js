@@ -111,7 +111,7 @@ const CurrentChat=(props)=>{
     
 
     return(
-        <Wrapper display={props.display}>
+        <Wrapper display={props.display} vh={props.vh}>
             <Header>
                 <HeaderUser>
                     <HeaderImage src={baseUrl+curMessage.receiverImage}/>

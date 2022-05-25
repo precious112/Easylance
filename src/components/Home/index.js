@@ -81,7 +81,7 @@ const Home=()=>{
 
     return(
         
-        <>
+        
             <Wrapper>
             <NavBar image={profileImage}/>
                 {state.clientGig==0?<DialogBox display={"block"} message={NO_GIGS}/>:<></>}
@@ -112,7 +112,7 @@ const Home=()=>{
             </ContentWrapper>
         </Wrapper>
 
-        </>
+        
     
         
     );

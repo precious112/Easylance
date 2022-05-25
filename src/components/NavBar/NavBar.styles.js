@@ -8,29 +8,35 @@ top:0;
 left:0;
 position:sticky;
 z-index: 100;
+margin-bottom:10px;
 box-shadow: -1px 5px 16px -10px rgba(0,0,0,0.63);
 -webkit-box-shadow: -1px 5px 16px -10px rgba(0,0,0,0.63);
 -moz-box-shadow: -1px 5px 16px -10px rgba(0,0,0,0.63);
 @media only screen and (max-width: 480px) {
-  padding-top:6px;
-  padding-bottom:6px;
   box-sizing: border-box;
   position: -webkit-sticky;
   position: sticky;
-  top: 0px;
-  left:none;
   }
 `;
 
 export const Wrapper = styled.div`
-width:96%;
+width:93%;
 padding-left:15px;
 padding-right:15px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-
-
+top:0;
+left:0;
+position:sticky;
+z-index: 100;
+height:100%;
+@media only screen and (max-width: 480px) {
+  padding-top:8px;
+  padding-bottom:8px;
+  position: -webkit-sticky;
+  position: sticky;
+  }
 
 `;
 

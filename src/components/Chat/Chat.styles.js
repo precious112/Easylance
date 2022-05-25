@@ -8,8 +8,7 @@ width:100%;
 padding-top:10px;
 @media only screen and (max-width: 480px) {
   padding:1px;
-  height:100vh;
-  min-height:100vh; 
+  height:auto; 
   margin:0px;
   box-sizing: border-box;
 }

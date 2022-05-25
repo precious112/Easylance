@@ -58,8 +58,8 @@ width:40%;
 padding:2%;
 @media only screen and (max-width: 480px) {
    width:98%;
-   padding-left:1px;
-   padding-right:1px;
+   padding:1px;
+   
 }
 `;
 

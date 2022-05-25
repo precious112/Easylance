@@ -1,13 +1,12 @@
 import React,{useEffect, useState} from 'react';
 import CurrentChat from '../CurrentChat';
 import LastChats from '../LastChats';
-import NavBar from '../NavBar';
-import { ContentSection, NavWrapper, Wrapper } from './Chat.styles';
-import profilepicc from '../../images/profilepicc.jpg'
+import { ContentSection, Wrapper } from './Chat.styles';
 import { useSelector,useDispatch } from 'react-redux';
 import {saveCurMessage} from '../../actions';
 import { useParams } from 'react-router-dom';
 import api from '../../API/Authentication';
+import { use100vh } from 'react-div-100vh'
 
 const Chat=()=>{
     const params = useParams();
@@ -15,6 +14,7 @@ const Chat=()=>{
     const [displayChildren,setDisplayChildren]=useState({lastchat:"block",currentchat:"none"});
 
     const dispatch= useDispatch();
+    const height = use100vh();
 
     const curUserId= useSelector(state=>state.user.id);
     const [userImage,setUserImage]=useState("");
@@ -183,9 +183,9 @@ const Chat=()=>{
     return(
         <Wrapper>
             <ContentSection>
-                <LastChats display={displayChildren.lastchat} senderImage={userImage} currUserId={curUserId}  Id={params.id}/>
+                <LastChats vh={height} display={displayChildren.lastchat} senderImage={userImage} currUserId={curUserId}  Id={params.id}/>
                 {
-                    firstname===""? <></>:<CurrentChat display={displayChildren.currentchat}/>
+                    firstname===""? <></>:<CurrentChat vh={height} display={displayChildren.currentchat}/>
                 }
             </ContentSection>
             </Wrapper>
