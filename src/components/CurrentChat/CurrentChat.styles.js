@@ -14,8 +14,8 @@ box-shadow: -1px 3px 5px -2px rgba(0,0,0,0.63);
   height:100%;
   position:absolute;
   margin-left:0;
-  top:0;
-  bottom:0;
+  top:10%;
+  bottom:10%;
 }
 
 `;
@@ -129,8 +129,8 @@ flex-direction:column-reverse;
     background: #f1f1f1;  
   }
   @media only screen and (max-width: 480px) {
-    min-height:74%;
-    max-height:74%;  
+    min-height:65%;
+    max-height:65%;  
   }
 `;
 
@@ -186,11 +186,8 @@ height:50px;
 padding: 20px 0px 20px 0px;
 display:flex;
 @media only screen and (max-width: 480px) {
-  padding:0;
-  position:relative;
-  height:16%;
-
-  
+  padding:15px 0px 15px 0px;
+  position:relative;  
 }
 
 `;
@@ -240,9 +237,6 @@ outline:none;
 padding:12px 7px 5px 7px;
 }
 @media only screen and (max-width: 480px) {
-  margin-top:10px;
-  margin-bottom:10px;
-  padding:8px 7px 1px 5px;
   
 }
 `;
