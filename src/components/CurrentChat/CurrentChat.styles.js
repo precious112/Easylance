@@ -186,7 +186,10 @@ height:50px;
 padding: 20px 0px 20px 0px;
 display:flex;
 @media only screen and (max-width: 480px) {
-  padding: 20px 0px 20px 0px;
+  padding:0;
+  position:relative;
+  height:12%;
+
   
 }
 
@@ -211,6 +214,8 @@ box-shadow: 1px 3px 10px 2px rgba(0,0,0,0.10);
 
 :hover{
     background:#f5f5f5;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 `;
 
@@ -235,7 +240,8 @@ outline:none;
 padding:12px 7px 5px 7px;
 }
 @media only screen and (max-width: 480px) {
- 
+  margin-top:10px;
+  margin-bottom:10px;
   
 }
 `;
