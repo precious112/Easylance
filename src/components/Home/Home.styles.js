@@ -66,6 +66,6 @@ padding:2%;
 export const Loader=styled.div`
 margin-left:230px;
 @media only screen and (max-width: 480px) {
- margin-left:150px;   
+ margin-left:170px;   
 }
 `;
