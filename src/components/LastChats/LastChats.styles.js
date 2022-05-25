@@ -15,7 +15,6 @@ box-shadow: -1px 3px 5px -2px rgba(0,0,0,0.63);
   height:100%;
   position:absolute;
   top:0;
-  bottom:0;
   display:${(props)=>props.display};   
 }
 `;
