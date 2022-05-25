@@ -129,8 +129,8 @@ flex-direction:column-reverse;
     background: #f1f1f1;  
   }
   @media only screen and (max-width: 480px) {
-    min-height:80%;
-    max-height:80%;  
+    min-height:74%;
+    max-height:74%;  
   }
 `;
 
@@ -188,7 +188,7 @@ display:flex;
 @media only screen and (max-width: 480px) {
   padding:0;
   position:relative;
-  height:12%;
+  height:16%;
 
   
 }
@@ -214,7 +214,7 @@ box-shadow: 1px 3px 10px 2px rgba(0,0,0,0.10);
 
 :hover{
     background:#f5f5f5;
-    margin-top:10px;
+    margin-top:13px;
     margin-bottom:10px;
 }
 `;
