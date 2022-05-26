@@ -7,8 +7,8 @@ min-height:100vh;
 width:100%;
 padding-top:10px;
 @media only screen and (max-width: 480px) {
-  padding:1px;
-  height:auto; 
+  height:auto;
+  padding:0; 
   margin:0px;
   box-sizing: border-box;
 }
@@ -35,6 +35,6 @@ justify-content:center;
 align-items:center;
 @media only screen and (max-width: 480px) {
   margin-top:0;
-  height:100%;  
+  height:auto;  
 }
 `;
