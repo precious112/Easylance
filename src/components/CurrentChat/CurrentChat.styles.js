@@ -11,8 +11,8 @@ box-shadow: -1px 3px 5px -2px rgba(0,0,0,0.63);
 @media only screen and (max-width: 480px) {
   display:${(props)=>props.display};
   width:100%;
-  height:${(props)=>props.vh};
-  max-height:${(props)=>props.vh};
+  height:${(props)=>props.vh}px;
+  max-height:${(props)=>props.vh}px;
   position:absolute;
   margin-left:0;
   top:0;
@@ -133,8 +133,8 @@ flex-direction:column-reverse;
     background: #f1f1f1;  
   }
   @media only screen and (max-width: 480px) {
-    min-height:60%;
-    max-height:60%;  
+    min-height:72%;
+    max-height:72%;  
   }
 `;
 

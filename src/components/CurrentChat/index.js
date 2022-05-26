@@ -7,6 +7,7 @@ import { useSelector,useDispatch } from 'react-redux';
 import api from '../../API/Authentication';
 import {saveCurMessage} from '../../actions';
 import { Link } from 'react-router-dom';
+import useWindowSize from '../../hooks/resizeHook';
 
 const CurrentChat=(props)=>{
     const baseUrl= "https://res.cloudinary.com/dcofnmq0l/";
@@ -18,6 +19,7 @@ const CurrentChat=(props)=>{
     const [chat,setChat,chatRef]=useState({username:curUserName,msg:""});
     const [chats,setChats,chatsRef]=useState([]);
     const dispatch= useDispatch();
+    const [height,width]=useWindowSize();
     
     
     const back=()=>{
@@ -98,6 +100,7 @@ const CurrentChat=(props)=>{
         
         
        getcurrentMessages(curMessage.receiverId);
+       console.log('height',height);
         
     },[curMessage,curUserName]);
 
@@ -111,7 +114,7 @@ const CurrentChat=(props)=>{
     
 
     return(
-        <Wrapper display={props.display} vh={props.vh}>
+        <Wrapper vh={height} display={props.display}>
             <Header>
                 <HeaderUser>
                     <HeaderImage src={baseUrl+curMessage.receiverImage}/>

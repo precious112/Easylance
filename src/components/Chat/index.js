@@ -6,7 +6,7 @@ import { useSelector,useDispatch } from 'react-redux';
 import {saveCurMessage} from '../../actions';
 import { useParams } from 'react-router-dom';
 import api from '../../API/Authentication';
-import { use100vh } from 'react-div-100vh'
+
 
 const Chat=()=>{
     const params = useParams();
@@ -14,7 +14,7 @@ const Chat=()=>{
     const [displayChildren,setDisplayChildren]=useState({lastchat:"block",currentchat:"none"});
 
     const dispatch= useDispatch();
-    const height = use100vh();
+
 
     const curUserId= useSelector(state=>state.user.id);
     const [userImage,setUserImage]=useState("");
@@ -183,9 +183,9 @@ const Chat=()=>{
     return(
         <Wrapper>
             <ContentSection>
-                <LastChats vh={height} display={displayChildren.lastchat} senderImage={userImage} currUserId={curUserId}  Id={params.id}/>
+                <LastChats display={displayChildren.lastchat} senderImage={userImage} currUserId={curUserId}  Id={params.id}/>
                 {
-                    firstname===""? <></>:<CurrentChat vh={height} display={displayChildren.currentchat}/>
+                    firstname===""? <></>:<CurrentChat display={displayChildren.currentchat}/>
                 }
             </ContentSection>
             </Wrapper>
