@@ -192,7 +192,8 @@ padding: 20px 0px 20px 0px;
 display:flex;
 @media only screen and (max-width: 480px) {
   padding:20px 0px 20px 0px;
-  position:relative;  
+  position:relative;
+  min-height:40px; 
 }
 
 `;
