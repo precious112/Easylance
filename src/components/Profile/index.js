@@ -21,7 +21,7 @@ const Profile = () =>{
 
     const curUserId= useSelector(state=>state.user.id);
     const curUserName=useSelector(state=>state.user.username);
-    const baseUrl= "https://res.cloudinary.com/dcofnmq0l/";
+    const baseUrl= "https://res.cloudinary.com/chopwell/";
 
 
     
