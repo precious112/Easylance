@@ -499,7 +499,7 @@ const Profile = () =>{
                           <>
                           {
                             userProfile.image?
-                            <ProfilePic src={baseUrl+userProfile.image} alt="profilepic"/>
+                            <ProfilePic src={userProfile.image} alt="profilepic"/>
                             :
                             <SkeletonProfilePic/>  
                           }
@@ -788,7 +788,7 @@ const Profile = () =>{
                             {item.project_videos.length || item.project_images.length?
                             <div>
                               {item.project_videos.length?<ProjectImage controls>
-                             <source src={baseUrl+item.project_videos[0].video}></source>
+                             <source src={item.project_videos[0].video}></source>
                              </ProjectImage>:
                              <a href={baseUrl+item.project_images[0].image}>
                              <ProjectVideo src={baseUrl+item.project_images[0].image} alt="project"/>
@@ -869,7 +869,7 @@ const Profile = () =>{
             <Wrapper>
             <ProfileDiv>
                 <ProfileCon>
-                <ProfilePic src={baseUrl+userProfile.image} alt="profilepic"/>
+                <ProfilePic src={userProfile.image} alt="profilepic"/>
                   <ProfileContent>
                       <ProfileName>
                       {userProfile.first_name} {userProfile.second_name}
@@ -959,7 +959,7 @@ const Profile = () =>{
                             {item.project_videos.length || item.project_images.length?
                             <div>
                               {item.project_videos.length?<ProjectImage controls>
-                             <source src={baseUrl+item.project_videos[0].video}></source>
+                             <source src={item.project_videos[0].video}></source>
                              </ProjectImage>:
                              <ProjectVideo src={baseUrl+item.project_images[0].image} alt="project"/>
 
