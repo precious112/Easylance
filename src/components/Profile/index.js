@@ -2,7 +2,7 @@ import React,{useRef,useState,useEffect} from 'react';
 import { ProfileContent, ProfileDiv,ProfileCon, ProfilePic, Wrapper, ProfileName, ProfileProfession, YearsOfExp, PortfolioCon, Skills, ExpAndPro, Experience, Exp,Exps, Project, Pro, ProjectImage, ProImg, SkeletonProfilePic, SkeletonShortText,SkeletonText, SkeletonTexts, CreateAndUpdateName, CrAndUpButton, BtnDiv, ExperienceForm, ExpInputBox, ExpInputDiv, EditCircle, SkillLi, NoProfile, SkillButton, ProUpdate, ProText, ProUpdateForm, ProInputBox, ProjectForm, ProjectVideo, OuterExps, EditRec, OuterPro, MainMobileDiv, SkillUl, ExpBody, ProjectDelete, ProSmall, ProjectMobileBody, ProjectMobileBodyTwo } from './Profile.styles';
 import defaultt from '../../images/defaultt.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCamera,faPen,faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faCamera,faPen,faTrash,faFile } from '@fortawesome/free-solid-svg-icons'
 import { applyMiddleware } from 'redux';
 import api from '../../API/Authentication';
 import { useSelector,useDispatch } from 'react-redux';
@@ -258,11 +258,11 @@ const Profile = () =>{
 
 
 
-     const ProjectFileHandler=async(event,id)=>{
+     const ProjectVideoHandler=async(event,id)=>{
         console.log(event.target.files[0]);
         const type=event.target.files[0].type;
         const projectFile= new FormData();
-        if(type.slice(0,6)=="video/"){
+        
             setUploadVideo(event.target.files[0]);
             projectFile.append("video",event.target.files[0]);
             try{
@@ -296,7 +296,21 @@ const Profile = () =>{
             console.log(err.response.data);
                 console.log(freelancerS);
         }
-        }else{
+        }
+        
+        
+        
+     
+
+
+
+
+
+     const ProjectImageHandler=async(event,id)=>{
+        console.log(event.target.files[0]);
+        const type=event.target.files[0].type;
+        const projectFile= new FormData();
+        //if(type.slice(0,6)=="video/"){{
            setProImages(event.target.files[0]);
            projectFile.append("image",event.target.files[0]);
            try{
@@ -330,10 +344,13 @@ const Profile = () =>{
         console.log(err.response);
             console.log(freelancerS);
     }
-        }
+        
         
         
      }
+
+
+
 
 
 
@@ -358,7 +375,7 @@ const Profile = () =>{
             console.log(createSkill);
                 console.log(freelancerS);
         }
-            }
+    }
     }
 
     const AddExperience=async(e)=>{
@@ -804,8 +821,12 @@ const Profile = () =>{
                             </ProSmall>
                             <BtnDiv>
                             <CrAndUpButton ><input type="file" 
-                  onChange={event=>ProjectFileHandler(event,item.id)} accept="video/*,image/*"
+                  onChange={event=>ProjectImageHandler(event,item.id)} accept="image/*"
                   /><small style={{marginLeft:'17px'}}><FontAwesomeIcon icon={faCamera} /> +
+                  </small></CrAndUpButton>
+                  <CrAndUpButton ><input type="file" 
+                  onChange={event=>ProjectVideoHandler(event,item.id)} accept="video/*"
+                  /><small style={{marginLeft:'17px'}}><FontAwesomeIcon icon={faFile} /> +
                   </small></CrAndUpButton>
                         </BtnDiv>
                         </div>
