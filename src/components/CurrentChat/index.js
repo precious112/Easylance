@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import useWindowSize from '../../hooks/resizeHook';
 
 const CurrentChat=(props)=>{
-    const baseUrl= "https://res.cloudinary.com/dcofnmq0l/";
+    const baseUrl= "https://res.cloudinary.com/chopwell/";
     const curMessage=useSelector((state)=>state.chat);
     const curUserId=useSelector(state=>state.user.id);
     const curUserName=useSelector(state=>state.user.username);
@@ -77,7 +77,7 @@ const CurrentChat=(props)=>{
     useEffect(()=>{
         
          console.log("opening websocket");
-         websocket.current=new WebSocket(`wss://easylance-backend.herokuapp.com/chat/${curMessage.receiverUsername}/${curUserName}/`);
+         websocket.current=new WebSocket(`wss://web-production-d0df.up.railway.app/chat/${curMessage.receiverUsername}/${curUserName}/`);
          websocket.current.onopen= (event)=>{
              console.log("open:",event)
          }
