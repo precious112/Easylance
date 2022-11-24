@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL:'https://easylance-backend.herokuapp.com'
+    baseURL:'https://web-production-d0df.up.railway.app/'
 });

@@ -8,7 +8,7 @@ import { useSelector,useDispatch } from 'react-redux';
 import api from '../../API/Authentication';
 
 const NavBar=(props)=>{
-    const baseUrl= "https://res.cloudinary.com/dcofnmq0l/";
+    const baseUrl= "https://res.cloudinary.com/chopwell/";
     const [show,setShow]=useState("none");
     const navigate=useNavigate();
     const [lastMessages,setLastMessages]=useState([]);
